@@ -1,0 +1,31 @@
+/*!
+ * Chart.qml
+ * you can look the Chart.js in http://chartjs.org/
+ *
+ * Copyright 2015 qyvlik
+ * Released under the MIT license
+ */
+
+
+import QmlProject 1.1
+
+Project {
+    mainFile: "main.qml"
+
+    /* Include .qml, .js, and image files from current directory and subdirectories */
+    QmlFiles {
+        directory: "."
+    }
+    JavaScriptFiles {
+        directory: "."
+    }
+    ImageFiles {
+        directory: "."
+    }
+    Files{
+        paths:"./LICENSE"
+    }
+
+    /* List of plugin directories passed to QML runtime */
+    // importPaths: [ "../exampleplugin" ]
+}
